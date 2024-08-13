@@ -1,0 +1,52 @@
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 89vh; 
+}
+
+.signup_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  width: 450px;
+  gap: 1.4rem;
+}
+
+.signup_card h2 {
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.signup_card h3 {
+  font-size: 25px;
+}
+
+.signup_card h5 {
+  font-family:cursive;
+  font-size: 15px;
+}
+
+.form_signup {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.signup_password {
+  width: 97%;
+  height: 50px;
+  padding: 5px;
+}
+
+.button {
+  color: #fff;
+  background-color: #f31919;
+  padding: 10px 20px;
+  border: none;
+  width: 100%;
+  height: 45px;
+}

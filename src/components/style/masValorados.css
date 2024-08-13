@@ -1,0 +1,18 @@
+.valorados_title {
+  color: #eee;
+  padding: 10px 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.vadorados_content > img {
+  max-width: 144px;
+  object-fit: contain;
+
+  padding: 3px;
+  
+  transition: transform 0.3s ease;
+}
+
+.valorados_img:hover {
+  transform: scale(1.05);
+}

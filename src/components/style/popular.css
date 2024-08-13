@@ -1,0 +1,52 @@
+.slider_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.popular_content {
+  display: flex;
+}
+
+.popular_content > img {
+  display: block;
+  max-width: 144px;
+  object-fit: contain;
+
+  padding: 3px;
+  
+  transition: transform 0.3s ease;
+}
+
+.popular_img {
+  height: auto;
+}
+
+.popular_title {
+  color: #eee;
+  padding-bottom: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.popular_content > img:hover {
+  transform: scale(1.02);
+} 
+
+
+@keyframes scroll {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+
+
+
+
+
+
+

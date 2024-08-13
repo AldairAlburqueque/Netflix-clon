@@ -1,0 +1,45 @@
+.login {
+  background-image: url('../../assets/images/back-netflix.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90.5vh;
+  object-fit: contain;
+  background-size: cover;
+  background-position: center;
+}
+
+.card_login {
+    background-color: rgba(0, 0, 0, 0.781);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+.form_login {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 ;
+  gap: 20px; 
+}
+
+.email_input {
+  padding: 20px;
+}
+
+.password_input {
+  padding: 20px;
+}
+
+.inicia_sesion {
+  color: #fff;
+  background-color: #e64242;
+  padding: 10px 10px;
+  border: none;
+}
+
+.login_suscribe {
+  color: #e64242;
+}

@@ -1,0 +1,47 @@
+.home {
+  position: relative;
+  height: 89vh;
+  background-image: url('../../assets/images/back-netflix.jpg');
+  object-fit: contain;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  color: #fff;
+  z-index: 10;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info h4 {
+  font-weight: 800;
+  font-size: 30px;
+  
+}
+.info h5 {
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.info h6 {
+  font-size: 15px;
+}
+
+.inputs input{
+  border: none;
+  padding: 10px;
+}
+
+.inputs button {
+  color: #fff;
+  padding: 10px;
+  background-color: #e64242;
+  border: none;
+}
