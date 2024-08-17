@@ -1,23 +1,24 @@
 
 .header {
-  background-color: rgba(3, 3, 3, 0.7);
+  /* background-color: rgba(247, 242, 242, 0); */
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 10px 0;
   font-size: 20px;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   left: 0;
   height: 60px;
 }
 
 .header.transparent {
-  background-color: rgba(0, 0, 0, 0);
+  /* background-color: rgba(255, 255, 255, 0); */
 }
 
 .img_logo {
-  height: 150px;
+  height: 5em;
+  z-index: 100;
 }
 
 .subscribe {
@@ -25,4 +26,11 @@
   background-color: #e64242;
   padding: 10px 20px;
   border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  z-index: 100;
+}
+
+Link img {
+  z-index: 1000;
 }
