@@ -33,7 +33,7 @@
 }
 
 .img_enjoy {
-  width: 25em;
+  width: 24em;
   z-index: 1;
   background: #000;
 }
@@ -77,7 +77,7 @@
 }
 
 .down_img {
-  width: 25em;
+  width: 24em;
 }
 
 /* WATCH */
@@ -109,20 +109,20 @@
 }
 
 .watch_img {
-  width: 27em;
+  width: 24em;
 
   position: absolute;
-  left: -85px;
+  left: -70px;
   top: 20px;
 }
 
 .monitor_watch {
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .monitor_watch video {
-  width: 275px;
-  height: 185px;
+  width: 15em;
+  height: 175px;
 }
 
 /* KIDS */
@@ -151,7 +151,7 @@ font-family: Arial, Helvetica, sans-serif;
 
 .kids_img {
   margin-top: 45px;
-  width: 25em;
+  width: 24em;
 }
 
 /* PREGUNTAS */
