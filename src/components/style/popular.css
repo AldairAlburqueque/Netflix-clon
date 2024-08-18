@@ -9,10 +9,10 @@
 
 .popular_content > img {
   display: block;
-  max-width: 144px;
+  max-width: 9em;
   object-fit: contain;
 
-  padding: 3px;
+  padding: 1px;
   
   transition: transform 0.3s ease;
 }
@@ -27,7 +27,17 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+@media (max-width: 450px) {
+  .popular_content > img {
+    max-width: 7.3em;
+  }
+}
 
+@media (max-width: 370px) {
+  .popular_content > img {
+    max-width: 6.7em;
+  }
+}
 
 .popular_content > img:hover {
   transform: scale(1.02);

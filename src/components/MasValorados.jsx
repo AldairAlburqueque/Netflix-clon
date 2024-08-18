@@ -81,7 +81,7 @@ export const MasValorados = ({ApiKey}) => {
           <Slider {...settings}>
           {
             valorados?.results.map( v => (
-              <div className="vadorados_content" key={v.id}>
+              <div className="valorados_content" key={v.id}>
                 <img className='valorados_img' key={v.id} src={`https://image.tmdb.org/t/p/w500${v.poster_path}`} onClick={()=> navigate(`/movies/${v.id}`)}/>
               </div>
             ))

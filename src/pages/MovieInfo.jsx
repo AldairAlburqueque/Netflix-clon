@@ -5,6 +5,7 @@ import './style/movieInfo.css'
 import ApiKey from '../utils/urls'
 
 import log from '../assets/images/netflix.svg'
+import View from '../components/View';
 
 
 const MovieInfo = () => {
@@ -12,6 +13,8 @@ const MovieInfo = () => {
   const {id} = useParams();
 
   const [movieId, setMovieId] = useState();
+  const [video, setVideo] = useState();
+  const [watch, setWatch] = useState(false);
 
   useEffect(() => {
     const url = `https://api.themoviedb.org/3/movie/${id}?api_key=${ApiKey}`
@@ -20,7 +23,21 @@ const MovieInfo = () => {
       .catch((err) => console.log(err)
       )
   }, [id])
-  console.log(movieId)
+
+
+  ////////////////////////
+
+  useEffect(() => {
+    const url = `https://api.themoviedb.org/3/movie/${id}/videos?api_key=${ApiKey}`
+    axios.get(url)
+      .then(res => setVideo(res.data))
+      .catch(err => console.log(err))
+  }, [])
+  
+  const handleView = () => {
+    setWatch(true)
+    }
+  
 
   return (
     <div className='movieInfo'>
@@ -48,12 +65,20 @@ const MovieInfo = () => {
             <h3>Fecha Lanzamiento</h3>
             <p>{movieId?.release_date}</p>
           </div>
+
+          <div className='view'>
+            <i className='bx bxs-right-arrow' onClick={ handleView }>Reproducir</i>
+            {
+              watch && (
+                <View video={video} setWatch={setWatch}/>
+              )
+            }
+          </div>
         </div>
-          
         </div>
       </div>
     </div>
   )
 }
 
-export default MovieInfo
+export default MovieInfo;

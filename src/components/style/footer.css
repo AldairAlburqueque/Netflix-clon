@@ -1,0 +1,40 @@
+ul li {
+  list-style: none;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background: #0c0c0c;
+  padding: 50px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footer_card {
+  width: 33%;
+  color: #cfcece;
+  margin-bottom: 20px;
+}
+
+.footer_card p {
+  margin: 1em 0;
+  font-size: 11px;
+}
+
+.footer_card ul li {
+  margin: .3em 0;
+  font-size: 14px;
+}
+
+.sociales {
+  display: flex;
+  gap: 1em;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -62,7 +62,6 @@ const Popular = ({ApiKey}) => {
           }
         ]
       };
-
     
   return (
     <div className='slider_container'>

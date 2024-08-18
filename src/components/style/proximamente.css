@@ -1,10 +1,10 @@
-.valorados_title {
+.prox_title {
   color: #eee;
   padding: 10px 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.valorados_content > img {
+.prox_content > img {
   display: block;
   max-width: 9em;
   object-fit: contain;
@@ -14,18 +14,18 @@
   transition: transform 0.3s ease;
 }
 
-.valorados_img:hover {
+.prox_img:hover {
   transform: scale(1.05);
 }
 
 @media (max-width: 450px) {
-  .valorados_content > img {
+  .prox_content > img {
     max-width: 7.3em;
   }
 }
 
 @media (max-width: 370px) {
-  .valorados_content > img {
+  .prox_content > img {
     max-width: 6.7em;
   }
 }

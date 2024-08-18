@@ -5,6 +5,7 @@ import Popular from '../components/Popular';
 import MasValorados  from '../components/MasValorados';
 import Search from '../components/Search';
 import { useNavigate, useParams } from 'react-router-dom';
+import Proximamente from '../components/Proximamente';
 
 
 const Movies = () => {  
@@ -86,6 +87,7 @@ useEffect(() => {
             <div className='banner_session'>
               <Popular ApiKey={ApiKey}  />
               <MasValorados ApiKey={ApiKey}/>
+              <Proximamente ApiKey={ApiKey}/>
             </div>
             
           </div>

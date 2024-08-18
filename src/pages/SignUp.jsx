@@ -50,8 +50,14 @@ const SignUp = () => {
       <h3>Suscribate a Netflix es fácil.</h3>
 
       <h5>Ingresa tu contraseña para comenzar a ver al instante.</h5>
+      <h5></h5>
 
       <form className='form_signup' onSubmit={handleRegister}>
+{/* 
+        <div>
+          <div><p>Email</p></div>
+          <div><p>{authEmail}</p></div>
+        </div> */}
 
       <input className='signup_password' type="email" placeholder='email' id='email' value={emailStorage} onChange={(e) => setEmailStorage(e.target.value)} />
 

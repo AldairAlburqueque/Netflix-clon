@@ -11,8 +11,8 @@ const HomeInfo = () => {
   return (
     <div className='homeInfo'>
       <div className='home_enjoy'>
-        <h2 className='title_enjoy'>Enjoy on your TV</h2>
-        <p className='p_enjoy'>Watch Smart TVs, Playstation, Xbox, Chromecast, Applet TV, Blu-ray players, and more.</p>
+        <h2 className='title_enjoy'>Disfruta en tu TV</h2>
+        <p className='p_enjoy'>Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</p>
         <div className='multi_enjoy'>
           <img className='img_enjoy' src={enjoy} alt="" />
           <div className='monitor_enjoy'>
@@ -24,8 +24,8 @@ const HomeInfo = () => {
       </div>
 
       <div className='home_down'>
-        <h2 className="title_down">Download your shows to watch offline</h2>
-        <p className="p_down">Save your favorites easily and always have something to watch.</p>
+        <h2 className="title_down">Descarga tus series para verlas offline</h2>
+        <p className="p_down">Guarda tu contenido favorito y tendrás siempre algo para ver.</p>
         <div className='multi_down'>
           <img src={down} alt="" className="down_img" />
           <div className="down_card-multi"></div>
@@ -33,8 +33,8 @@ const HomeInfo = () => {
       </div>
 
       <div className="home_watch">
-        <h2 className="title_watch">Watch everywhere</h2>
-        <p className="p_watch">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        <h2 className="title_watch">Disfruta donde quieras</h2>
+        <p className="p_watch">Películas y series ilimitadas en tu teléfono, tablet, laptop y TV.</p>
         <div className="multi_watch">
           <img src={watch} alt="" className="watch_img" />
           <div className='monitor_watch'>
@@ -46,8 +46,8 @@ const HomeInfo = () => {
       </div>
 
       <div className="home_kids">
-        <h2 className="title_kids">Create profiles for kids</h2>
-        <p className="p_kids">Send kids on adventures with their favorite characters in a space made just for them--free with your membership.</p>
+        <h2 className="title_kids">Crea perfiles para niños</h2>
+        <p className="p_kids">Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, sin costo con tu membresía.</p>
         <div className="multi_kids">
           <img src={kids} alt="" className="kids_img" />
         </div>

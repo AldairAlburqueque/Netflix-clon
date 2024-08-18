@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { setName } from '../store/slices/email.slice'
 import HomeInfo from '../components/HomeInfo'
+import Footer from '../components/Footer'
 
 const Home = () => {
 
@@ -28,16 +29,17 @@ const Home = () => {
       <Header />
     <div className='home'>
       <div className="info">
-        <h4>Unlimited films, TV programmes and more.</h4>
-        <h5>Watch anywhere. Cancel at any time.</h5>
-        <h6>Ready to watch? Enter your Email to crete or restar your membership.</h6>
+        <h4>Películas y series ilimitadas y mucho más</h4>
+        <h5>Disfruta donde quieras. Cancela cuando quieras.</h5>
+        <h6>¿Quieres ver Netflix ya? Ingresa tu email o número de celular para crear una cuenta o reiniciar tu membresía.</h6>
         <form className="inputs" onSubmit={handleSubmit}>
           <input type="email" id='email' placeholder='Email' />
-          <button>GET STARTED</button>
+          <button>Comenzar</button>
         </form>
       </div>      
     </div>
     <HomeInfo />
+    <Footer />
     </>
   )
 }
