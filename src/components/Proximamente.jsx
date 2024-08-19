@@ -39,7 +39,7 @@ const Proximamente = ({ ApiKey }) => {
         breakpoint: 900,
         settings: {
           slidesToShow: 5, 
-          slidesToScroll: 2
+          slidesToScroll: 1
         }
       },
       {
@@ -53,7 +53,7 @@ const Proximamente = ({ ApiKey }) => {
         breakpoint: 600,
         settings: {
           slidesToShow: 3, 
-          slidesToScroll: 1
+          slidesToScroll: 2
         }
       }
     ]
