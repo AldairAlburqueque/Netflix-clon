@@ -28,7 +28,16 @@ const HomeInfo = () => {
         <p className="p_down">Guarda tu contenido favorito y tendrás siempre algo para ver.</p>
         <div className='multi_down'>
           <img src={down} alt="" className="down_img" />
-          <div className="down_card-multi"></div>
+          <div className="down_card-multi">
+            <div className="down_card-img">
+              <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" alt="" />
+            </div>
+            <div className="down_card-text">
+              <h5>Stranger Things</h5>
+              <p>Descargando...</p>
+            </div>
+            <div className="down_card-gif"></div>
+          </div>
         </div>
       </div>
 

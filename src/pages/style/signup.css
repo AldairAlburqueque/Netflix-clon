@@ -36,6 +36,21 @@
   width: 100%;
 }
 
+.email_signup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.email_p {
+  font-size: large;
+}
+
+.email_auth {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
 .signup_password {
   width: 97%;
   height: 50px;

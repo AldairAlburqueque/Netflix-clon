@@ -35,7 +35,7 @@ const SignUp = () => {
     const hashedPassword = await bcrypt.hash(passwordStorage, saltRounds);
 
     // Guardar el email y la contraseña encriptada en localStorage
-    localStorage.setItem('userEmail', emailStorage);
+    // localStorage.setItem('userEmail', emailStorage);
     localStorage.setItem('userPassword', hashedPassword);
 
     navigate('/login')
@@ -53,13 +53,17 @@ const SignUp = () => {
       <h5></h5>
 
       <form className='form_signup' onSubmit={handleRegister}>
-{/* 
-        <div>
-          <div><p>Email</p></div>
-          <div><p>{authEmail}</p></div>
-        </div> */}
 
-      <input className='signup_password' type="email" placeholder='email' id='email' value={emailStorage} onChange={(e) => setEmailStorage(e.target.value)} />
+        <div className='email_signup'>
+          <div className='email_signup-card'>
+            <p className='email_p'>Email</p>
+          </div>
+          <div className='email_signup-card'>
+            <p className='email_auth'>{authEmail}</p>
+          </div>
+        </div>
+
+      {/* <input className='signup_password' type="email" placeholder='email' id='email' value={emailStorage} onChange={(e) => setEmailStorage(e.target.value)} /> */}
 
       <input className='signup_password' type="password" placeholder='Ingresa tu contraseña' id='password' value={passwordStorage} onChange={(e) => setPasswordStorage(e.target.value)} />
 

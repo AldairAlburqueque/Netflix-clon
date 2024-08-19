@@ -53,7 +53,7 @@ const MovieInfo = () => {
           </div>
         
         <div className='movie_description'>
-        <div className='generos'>
+          <div className='generos'>
             <h3>Géneros</h3>
             {
               movieId?.genres.map((e) =>(
@@ -65,7 +65,6 @@ const MovieInfo = () => {
             <h3>Fecha Lanzamiento</h3>
             <p>{movieId?.release_date}</p>
           </div>
-
           <div className='view'>
             <i className='bx bxs-right-arrow' onClick={ handleView }>Reproducir</i>
             {

@@ -6,6 +6,7 @@ import MasValorados  from '../components/MasValorados';
 import Search from '../components/Search';
 import { useNavigate, useParams } from 'react-router-dom';
 import Proximamente from '../components/Proximamente';
+import Footer from '../components/Footer';
 
 
 const Movies = () => {  
@@ -88,6 +89,7 @@ useEffect(() => {
               <Popular ApiKey={ApiKey}  />
               <MasValorados ApiKey={ApiKey}/>
               <Proximamente ApiKey={ApiKey}/>
+              <Footer />
             </div>
             
           </div>

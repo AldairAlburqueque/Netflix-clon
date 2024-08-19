@@ -6,9 +6,10 @@ ul li {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  background: #0c0c0c;
+  background-color: rgb(17, 16, 16);
   padding: 50px;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-top: 3px solid rgb(194, 194, 194);
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
 }
 
 .footer_card {

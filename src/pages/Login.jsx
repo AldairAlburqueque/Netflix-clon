@@ -36,7 +36,7 @@ const  Login = () => {
     e.preventDefault();
 
     // Recuperar los datos almacenados en localStorage
-    const storedEmail = localStorage.getItem('userEmail');
+    const storedEmail = localStorage.getItem('email');
     const storedPassword = localStorage.getItem('userPassword');
 
     // Verificar la contraseña ingresada con la almacenada

@@ -16,10 +16,10 @@ const Home = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
-    setEmail(e.target.email.value)
+    // setEmail(e.target.email.value)
     dispatch(setName(e.target.email.value.trim()))
-    e.target.email.value = ''
-    // localStorage.setItem('email', email)
+    // e.target.email.value = ''
+    localStorage.setItem('email', email)
     navigate('./signup')    
   }
 
@@ -33,7 +33,7 @@ const Home = () => {
         <h5>Disfruta donde quieras. Cancela cuando quieras.</h5>
         <h6>¿Quieres ver Netflix ya? Ingresa tu email o número de celular para crear una cuenta o reiniciar tu membresía.</h6>
         <form className="inputs" onSubmit={handleSubmit}>
-          <input type="email" id='email' placeholder='Email' />
+          <input type="email" id='email' placeholder='Email' value={ email } onChange={(e) => setEmail(e.target.value)} required />
           <button>Comenzar</button>
         </form>
       </div>      
