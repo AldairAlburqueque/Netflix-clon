@@ -1,17 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './style/movie.css';
-import Popular from '../components/Popular';
-import MasValorados  from '../components/MasValorados';
 import Search from '../components/Search';
 import { useNavigate, useParams } from 'react-router-dom';
-import Proximamente from '../components/Proximamente';
 import Footer from '../components/Footer';
-
+import Section from '../components/Section';
 
 const Movies = () => {  
 
-  const ApiKey = 'c026943b0cb2466967f089cff7e72a57'
+  const ApiKey = 'c026943b0cb2466967f089cff7e72a57';
+  //
+  const popular = "popular";
+  const top_rated = "top_rated";
+  const upcoming = "upcoming";
+
+  //title
+  const popu = "Populares";
+  const valorados = "Mas Valorados";
+  const prox = "Proximamente";
 
   const [movies, setMovies] = useState('');
   const [results, setResults ] = useState([]);
@@ -50,10 +56,6 @@ useEffect(() => {
 
 }, [])
 
-// useEffect(() => { 
-//   handleSearch(); 
-// }, [])
-
   return (
       
       <div className="content">
@@ -86,9 +88,9 @@ useEffect(() => {
               <div className='banner_degreed'></div>
             </div>
             <div className='banner_session'>
-              <Popular ApiKey={ApiKey}  />
-              <MasValorados ApiKey={ApiKey}/>
-              <Proximamente ApiKey={ApiKey}/>
+              <Section ApiKey={ApiKey} section={popular} title={popu}/>
+              <Section ApiKey={ApiKey} section={top_rated} title={valorados}/>
+              <Section ApiKey={ApiKey} section={upcoming}  title={prox}/>
               <Footer />
             </div>
             

@@ -1,10 +1,10 @@
-.valorados_title {
+.sections_title {
   color: #eee;
   padding: 10px 0;
   font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
 }
 
-.valorados_content > img {
+.sections_content > img {
   display: block;
   max-width: 9em;
   object-fit: contain;
@@ -14,18 +14,18 @@
   transition: transform 0.3s ease;
 }
 
-.valorados_img:hover {
+.sections_img:hover {
   transform: scale(1.05);
 }
 
 @media (max-width: 450px) {
-  .valorados_content > img {
+  .sections_content > img {
     max-width: 7.3em;
   }
 }
 
 @media (max-width: 370px) {
-  .valorados_content > img {
+  .sections_content > img {
     max-width: 6.7em;
   }
 }

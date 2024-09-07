@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import axios from 'axios';
-import './style/masValorados.css'
+import './style/sections.css'
 import { useNavigate } from 'react-router-dom';
 
 import Slider from 'react-slick';
@@ -9,24 +9,21 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-export const MasValorados = ({ApiKey}) => {
+const Section = ({ApiKey, section, title}) => {
 
-  const [valorados, setValorados] = useState();
+  const [sections, setSections] = useState();
 
   const navigate = useNavigate();
 
     useEffect(() => {
-      const url = `https://api.themoviedb.org/3/movie/top_rated?api_key=${ApiKey}`;
+      const url = `https://api.themoviedb.org/3/movie/${section}?api_key=${ApiKey}`;
 
     axios.get(url)
     
-      .then( res => setValorados(res.data))
+      .then( res => setSections(res.data))
       .catch( err => console.log(err))
 
     }, [])
-
-    
-
 
     const settings = {
       initialSlide: 0,
@@ -74,24 +71,24 @@ export const MasValorados = ({ApiKey}) => {
 
 
   return (
-    <div className='valorados'>
-      <h1 className='valorados_title'>Más Valorados</h1>
-      <div className='valorados_card'>
-        { valorados && (
+    <div className='sections'>
+      <h1 className='sections_title'>{title}</h1>
+      <div className='sections_card'>
+        { sections && (
           <Slider {...settings}>
           {
-            valorados?.results.map( v => (
-              <div className="valorados_content" key={v.id}>
-                <img className='valorados_img' key={v.id} src={`https://image.tmdb.org/t/p/w500${v.poster_path}`} onClick={()=> navigate(`/movies/${v.id}`)}/>
+            sections?.results.map( v => (
+              <div className="sections_content" key={v.id}>
+                <img className='sections_img' key={v.id} src={`https://image.tmdb.org/t/p/w500${v.poster_path}`} onClick={()=> navigate(`/movies/${v.id}`)}/>
               </div>
             ))
           }
           </Slider>
         )}
-        
       </div>
     </div>
+
   )
 }
 
-export default MasValorados;
+export default Section
