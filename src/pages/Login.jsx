@@ -48,7 +48,7 @@ const  Login = () => {
         navigate('/movies')
       }
     } else {
-      alert('Correo electrónico incorrecto o password');
+      alert('Correo electrónico o password incorrecto');
     }
   };
   

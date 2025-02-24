@@ -74,7 +74,7 @@ useEffect(() => {
                   </div>
                 ))
               ) : (
-                <p>No movies found</p>
+                <p>No movies found - 404</p>
               )}
             </div>
           </div>
