@@ -64,7 +64,7 @@ const  Login = () => {
         <input type="password" placeholder='Contraseña' className='password_input' id='password' value={password}onChange={handlePasswordChange} />
         <button className='inicia_sesion'>Inicia sesión </button>
       </form>
-      <span>¿Primera vez en Netflix? <Link to='/' className='login_suscribe'>Suscríbete ahora.</Link></span>
+      <span>¿Primera vez en Netflix? <Link to='/' className='login_suscribe'>Suscríbate ahora.</Link></span>
       </div>
       
     </div>
