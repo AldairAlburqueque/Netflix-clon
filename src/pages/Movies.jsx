@@ -6,9 +6,10 @@ import { useNavigate, useParams } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Section from '../components/Section';
 
+import ApiKey from '../utils/urls';
+
 const Movies = () => {  
 
-  const ApiKey = 'c026943b0cb2466967f089cff7e72a57';
   //
   const popular = "popular";
   const top_rated = "top_rated";

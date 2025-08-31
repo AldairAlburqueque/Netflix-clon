@@ -1,4 +1,4 @@
-const apiKey = import.meta.env.REACT_APP_APIKEY;
+const apiKey = import.meta.env.VITE_REACT_APP_APIKEY;
 // const top_rated = "top_rated";
 
 // const requests = {

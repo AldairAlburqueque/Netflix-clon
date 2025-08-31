@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './style/signup.css'
 
-import {  useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import bcrypt from 'bcryptjs'
@@ -10,7 +10,7 @@ import bcrypt from 'bcryptjs'
 const SignUp = () => {
 
   const [passwordStorage, setPasswordStorage] = useState('')
-  const [emailStorage, setEmailStorage] = useState('')
+  // const [emailStorage, setEmailStorage] = useState('')
 
   const navigate = useNavigate();
 

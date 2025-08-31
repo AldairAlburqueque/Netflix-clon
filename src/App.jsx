@@ -1,4 +1,3 @@
-import React from 'react' 
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Login from './pages/Login'
@@ -8,8 +7,6 @@ import ProtectedRoutes from './pages/protecteRoutes'
 import Movies from './pages/Movies'
 import SignUp from './pages/SignUp'
 import MovieInfo from './pages/MovieInfo'
-
-
 
 
 function App() {
