@@ -1,3 +1,4 @@
+const apiKey = import.meta.env.REACT_APP_APIKEY;
 // const top_rated = "top_rated";
 
 // const requests = {
@@ -11,6 +12,6 @@
 //   documentaries
 // }
 
-const ApiKey = "c026943b0cb2466967f089cff7e72a57";
+const ApiKey = apiKey;
 
-export default ApiKey
+export default ApiKey;
