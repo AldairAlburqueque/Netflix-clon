@@ -25,7 +25,7 @@ const MovieInfo = () => {
   }, [id])
 
 
-  ////////////////////////
+// *************************************
 
   useEffect(() => {
     const url = `https://api.themoviedb.org/3/movie/${id}/videos?api_key=${ApiKey}`
