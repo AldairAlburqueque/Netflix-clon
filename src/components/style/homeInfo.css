@@ -196,36 +196,135 @@ font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-
 
 /* PREGUNTAS */
 
+/* PREGUNTAS FRECUENTES (Estilo Netflix) */
+
 .home_preguntas {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  padding: 3rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .preguntas_title {
   color: #fff;
   text-align: center;
-  font-size: 2.2em;
-  font-weight: 600;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+  font-family: "Netflix Sans", "Helvetica Neue", Segoe UI, Roboto, sans-serif;
 }
 
-details {
-  background-color: rgb(45,45,45);
-  padding: 1em;
-  letter-spacing: .2px;
+.faq_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
 }
 
-summary {
+.faq_item {
+  background-color: #2d2d2d;
+  transition: background-color 0.25s ease;
+  overflow: hidden;
+}
+
+.faq_item:hover {
+  background-color: #414141;
+}
+
+/* Botón de la pregunta */
+.faq_question {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
   color: #fff;
-  font-size: 18px;
-  margin-bottom: 15px;
-
-}
-
-details p {
-  color: #fff;
+  padding: 1.25rem 1.5rem;
+  font-size: 1.35rem;
   font-weight: 400;
-  height: auto;
-  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  font-family: inherit;
+}
+
+/* Ícono "+" que se transforma en "x" */
+.faq_icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  transition: transform 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.faq_icon::before,
+.faq_icon::after {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Línea horizontal */
+.faq_icon::before {
+  width: 24px;
+  height: 2px;
+}
+
+/* Línea vertical */
+.faq_icon::after {
+  width: 2px;
+  height: 24px;
+}
+
+/* Rotación a 45 deg cuando está abierto */
+.faq_item.open .faq_icon {
+  transform: rotate(45deg);
+}
+
+/* Panel de respuesta con transición fluida */
+.faq_answer {
+  max-height: 0;
+  opacity: 0;
+  padding: 0 1.5rem;
+  transition: max-height 0.3s ease-out, opacity 0.25s ease, padding 0.3s ease;
+  border-top: 1px solid transparent;
+}
+
+.faq_item.open .faq_answer {
+  max-height: 500px;
+  opacity: 1;
+  padding: 1.25rem 1.5rem;
+  border-top-color: #181818;
+}
+
+.faq_answer p {
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  font-family: "Netflix Sans", "Helvetica Neue", Segoe UI, Roboto, sans-serif;
+}
+
+/* Ajuste Mobile */
+@media (max-width: 600px) {
+  .preguntas_title {
+    font-size: 1.8rem;
+  }
+
+  .faq_question {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  .faq_answer p {
+    font-size: 0.95rem;
+  }
 }
